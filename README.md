@@ -57,4 +57,4 @@ La version industrialisée du projet est développée séparément dans trois d�
 
 POC — Phase de sécurisation et de documentation.
 
-La version industrialisée fera l'objet d'un développement distinct.
+La version industrialisée fera l'objet d'un développement distinct
