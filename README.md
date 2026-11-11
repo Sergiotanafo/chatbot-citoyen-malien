@@ -1,79 +1,60 @@
- Chatbot citoyen malien
+# Chatbot citoyen malien — POC
 
-POC – Assistant conversationnel bilingue français–bambara**
+## Présentation
 
- 1. Présentation du projet
+Ce dépôt est consacré au **Proof of Concept (POC)** du projet Chatbot citoyen malien.
 
-Le projet Chatbot citoyen malien vise à développer un assistant conversationnel intelligent permettant aux citoyens d'accéder plus facilement aux informations relatives aux démarches administratives au Mali.
+Il constitue la première version expérimentale du projet. Son objectif est de démontrer la faisabilité technique d'un chatbot capable d'interagir avec les citoyens en français et en bambara.
 
-Le système prend en charge les échanges en français et en bambara et s'appuie sur des technologies de traitement automatique du langage naturel et d'intelligence artificielle.
+## Objectifs du POC
 
- 2. Objectifs
+- Démontrer la faisabilité d'un chatbot citoyen bilingue français–bambara.
+- Expérimenter le traitement automatique du langage naturel avec Rasa.
+- Évaluer l'utilisation des embeddings pour améliorer la compréhension des requêtes.
+- Tester les mécanismes de recherche et de génération de réponses.
+- Évaluer les premières fonctionnalités de traitement vocal (ASR et TTS), selon leur niveau d'intégration.
 
-- Faciliter l'accès aux informations administratives.
-- Permettre aux citoyens de poser leurs questions en français ou en bambara.
-- Fournir des réponses adaptées au contexte de la conversation.
-- Centraliser les informations et les services administratifs.
-- Préparer une architecture évolutive et modulaire.
+## Périmètre du dépôt
 
- 3. Architecture générale
+Ce dépôt accueille exclusivement les travaux relatifs au POC :
 
-Le projet est organisé autour de trois composantes principales :
+- Conservation du prototype existant.
+- Corrections et améliorations expérimentales.
+- Tests et évaluations techniques.
+- Documentation de l'état du prototype.
+- Sécurisation du code et des données du POC.
 
- Front-end
-Contient les interfaces destinées aux citoyens et aux administrateurs.
+**Important :** ce dépôt n'est pas destiné au développement de la version industrialisée.
 
-- `chatbot-ui/` : interface conversationnelle.
-- `admin-ui/` : interface d'administration.
+## Organisation des branches
 
- Back-end
-Gère les API, les services applicatifs, la sécurité et l'accès aux données.
+| Branche | Utilisation |
+|---|---|
+| `main` | Version stable et de référence du POC |
+| `develop` | Intégration des évolutions du POC |
+| `feature/*` | Développement de fonctionnalités spécifiques |
 
-### DSP (Data Science Platform)
-Regroupe les composants d'intelligence artificielle :
+## Organisation du projet
 
-- Traitement du langage naturel.
-- Reconnaissance des intentions.
-- Embeddings français et bambara.
-- Rasa et modèles d'intelligence artificielle.
-- Reconnaissance et synthèse vocales (ASR/TTS).
+L'architecture présente dans ce dépôt constitue une structure de travail initiale. Elle pourra évoluer en fonction de l'état réel du prototype.
 
- 4. Organisation du repository
+## Sécurité et bonnes pratiques
 
-chatbot-citoyen-malien/
-├── frontend/
-├── backend/
-├── dsp/
-├── contracts/
-├── deploy/
-├── scripts/
-├── tests/
-├── docs/
-├── README.md
-└── .gitignore
+- Ne jamais publier de mots de passe, clés API ou secrets.
+- Ne pas versionner de données personnelles ou confidentielles.
+- Documenter les modifications importantes.
+- Tester les changements avant leur intégration dans `main`.
 
- 5. Technologies
+## Dépôts associés : industrialisation
 
-Les technologies seront précisées et documentées au fur et à mesure du développement.
+La version industrialisée du projet est développée séparément dans trois dépôts :
 
-- Python
-- Rasa
-- PostgreSQL
-- API REST
-- gRPC
-- Traitement automatique du langage naturel
-- Technologies Front-end à définir
+- **Frontend** : https://github.com/Sergiotanafo/chatbot-citoyen-frontend
+- **Backend** : https://github.com/Sergiotanafo/chatbot-citoyen-backend
+- **DSP** : https://github.com/Sergiotanafo/chatbot-citoyen-dsp
 
- 6. Équipe et collaboration
+## Statut du projet
 
-Le projet est développé en collaboration entre les membres de l'équipe, sous la supervision de l'encadreuse.
+POC — Phase de sécurisation et de documentation.
 
-Les développements sont organisés à travers Git et GitHub, avec des branches dédiées et des Pull Requests.
-
- 7. État du projet
-
-**Phase actuelle :** Proof of Concept (POC) et structuration de l'architecture cible.
-
- 8. Licence
-
-Projet en cours de développement. Les conditions de distribution seront définies ultérieurement.
+La version industrialisée fera l'objet d'un développement distinct.
